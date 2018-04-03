@@ -38,6 +38,15 @@ namespace LinearTable
             str += "\t】\r\n";
             return str;
         }
+        string Getstr_percom_temp2(int m,int k)
+        {
+            string str = "";
+            str += "(\t" + (++count).ToString() + "\t)\t\t【";
+            for (int i = 0; i <= k; i++)
+                str += "\t" + m_percom_temp[i].ToString();
+            str += "\t】\r\n";
+            return str;
+        }
         public void Fun_Permute_Recursion(int n, int m, int k)
         {
             for (int i = 1; i <= n; i++)
@@ -136,6 +145,7 @@ namespace LinearTable
 
             }
         }
+
         public void Fun_Permute_Stack1(int n, int m)
         {
             int[] s_no = new int[m + 1]; //存放栈顶次数的栈
@@ -192,7 +202,14 @@ namespace LinearTable
 
             }
         }
-    
+
+     
+        public void Fun_Permute_Queue(int n, int m, int k)
+        {
+          
+
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             int m = Convert.ToInt32(textBox1.Text);
@@ -203,7 +220,10 @@ namespace LinearTable
             count = 0;
             if (radioButton1.Checked == true)
                 Fun_Permute_Recursion(m, n, 0);
-            else Fun_Permute_Stack(m, n);
+            else if (radioButton2.Checked == true)
+                Fun_Permute_Stack(m, n);
+            else if (radioButton3.Checked == true)
+                Fun_Permute_Queue(m, n, 0);
             richTextBox1.Text = m_strout;
         }
 
@@ -225,7 +245,7 @@ namespace LinearTable
         private void button3_Click(object sender, EventArgs e)
         {
             int m = Convert.ToInt32(textBox1.Text);
-            richTextBox1.Text = Convert.ToString(m);
+            //richTextBox1.Text = Convert.ToString(m);
             m_strout = "";
             for (int i = 0; i < 100; i++) m_percom_temp[i] = 0;
             count = 0;
@@ -235,7 +255,61 @@ namespace LinearTable
             else if (radioButton2.Checked == true)
                 for (int i = 1; i <= m; i++)
                     Fun_Permute_Stack1(m, i);
+            else if (radioButton3.Checked == true)
+                for (int i = 1; i <= m; i++)
+                    ;
                     richTextBox1.Text = m_strout;
+        }
+        
+        struct m_class
+        {
+            public int number;
+            public int label;
+        }
+        m_class[] number = new m_class[30];
+        public void Fun_Permute_Recursion2(int n, int m, int k,int classroom1,int classroom2)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                bool tag = false;
+                for (int j = 0; j <= k - 1; j++)
+                {
+                    if (i <= m_percom_temp[j])
+                    { tag = true; break; }
+                }
+                if (tag == false)
+                {
+                    m_percom_temp[k] = i;
+                    int count1 = 0;
+                    for (int j1 = 0; j1<= k;j1 ++)
+                        count1 += number[m_percom_temp[j1]-1].number;
+                    int count2 = 0;
+                    for (int j2=0;j2<m;j2++)
+                        count2+=number[j2].number;
+                    count2 -= count1;
+                    if (k<m-1)
+                        Fun_Permute_Recursion2(n, m, k + 1, classroom1,classroom2);
+                    if(count1<=classroom1&&count2<=classroom2)
+                        m_strout += Getstr_percom_temp2(m,k);
+                }
+            }
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int classroom1 = Convert.ToInt16(textBox3.Text);
+            int classroom2 = Convert.ToInt16(textBox4.Text);
+            m_strout = "";
+            for (int i = 0; i < 100; i++) m_percom_temp[i] = 0;
+            count = 0;
+            for (int i = 0; i < 30; i++) number[i] = new m_class();
+            for (int i = 0; i < textBox5.Lines.Length; i++)
+            {
+                number[i].number = Convert.ToInt16(textBox5.Lines[i]);
+                number[i].label = i + 1;
+            }
+            int classnumber = textBox5.Lines.Length;
+            Fun_Permute_Recursion2(classnumber, classnumber, 0, classroom1,classroom2);
+            richTextBox1.Text = m_strout;
         }
     }
 }
