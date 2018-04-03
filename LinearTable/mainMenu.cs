@@ -57,6 +57,12 @@ namespace LinearTable
             Control_Add(m_CalculatorForm);
         }
 
+        private void 分形树ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fractaltree m_fractaltree = new Fractaltree();
+            Control_Add(m_fractaltree);
+        }
+
       
     }
 }

@@ -32,9 +32,10 @@
             this.linearTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sequenceTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.单链表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.排列组合ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.计算器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.分形树ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +56,8 @@
             this.sequenceTableToolStripMenuItem,
             this.单链表ToolStripMenuItem,
             this.排列组合ToolStripMenuItem,
-            this.计算器ToolStripMenuItem});
+            this.计算器ToolStripMenuItem,
+            this.分形树ToolStripMenuItem});
             this.linearTableToolStripMenuItem.Name = "linearTableToolStripMenuItem";
             this.linearTableToolStripMenuItem.Size = new System.Drawing.Size(56, 21);
             this.linearTableToolStripMenuItem.Text = "线性表";
@@ -74,14 +76,6 @@
             this.单链表ToolStripMenuItem.Text = "单链表";
             this.单链表ToolStripMenuItem.Click += new System.EventHandler(this.单链表ToolStripMenuItem_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 25);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1064, 603);
-            this.panel1.TabIndex = 1;
-            // 
             // 排列组合ToolStripMenuItem
             // 
             this.排列组合ToolStripMenuItem.Name = "排列组合ToolStripMenuItem";
@@ -95,6 +89,21 @@
             this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.计算器ToolStripMenuItem.Text = "计算器";
             this.计算器ToolStripMenuItem.Click += new System.EventHandler(this.计算器ToolStripMenuItem_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 25);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1064, 603);
+            this.panel1.TabIndex = 1;
+            // 
+            // 分形树ToolStripMenuItem
+            // 
+            this.分形树ToolStripMenuItem.Name = "分形树ToolStripMenuItem";
+            this.分形树ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.分形树ToolStripMenuItem.Text = "分形树";
+            this.分形树ToolStripMenuItem.Click += new System.EventHandler(this.分形树ToolStripMenuItem_Click);
             // 
             // mainMenu
             // 
@@ -122,6 +131,7 @@
         private System.Windows.Forms.ToolStripMenuItem 单链表ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 排列组合ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 计算器ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 分形树ToolStripMenuItem;
     }
 }
 

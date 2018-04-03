@@ -204,11 +204,57 @@ namespace LinearTable
         }
 
      
-        public void Fun_Permute_Queue(int n, int m, int k)
+        public void Fun_Permute_Queue(int n, int m)
         {
-          
+            CQueue<int> m_cqueue = new CQueue<int>();
+            int[] zijishulie = new int[n];
+            for (int i = 0; i < n; i++) zijishulie[i] = i + 1;
+            int i1 = 0;
+            while(i1<n)
+            {
+                while(m_cqueue.Rear()-m_cqueue.Front()<m&&i1<n)
+                {
+                    m_cqueue.In(zijishulie[i1]);
+                    i1++;
+                }
+                for (int j=0;j<m;j++)
+                {
+                    int[]k1=new int[m];
+                    for (int i = 0; i < m; i++)
+                        k1[i] = i1 - m + i + 1;
+                    int count = 0;
+                    int[,] k2 = new int[10, 10];
+                    for (int i = 0; i < m; i++)
+                        k2[count, i] = i1 - m + i + 1;
+                    for (int j1 = j + 1; j1 < m; j1++)
+                    {
+                        for (int j2 = 0; j2 <= count; j2++)
+                        {
+                            int[] k3 = new int[10];
+                            for (int i12 = 0; i12 < m; i12++)
+                                k3[i12] = k2[j2, i12];
+                                swap(k3, j, j1);
+                                for (int i13 = 0; i13 < m; i13++)
+                                    k2[count+1, i13] = k3[i13];
+                                    for (int i = 0; i < m; i++) m_strout += Convert.ToString(k3[i]);
+                            m_strout += "\r\n";
+                            
+                        }
+                        count++;
+                                               
+                    }
+                }
+                m_cqueue.Out();
+            }
 
 
+        }
+        public void swap(int []k,int m,int n)
+        {
+            int k1 = k[m];
+            k[m] = k[n];
+            k[n] =k1;
+            
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -223,7 +269,7 @@ namespace LinearTable
             else if (radioButton2.Checked == true)
                 Fun_Permute_Stack(m, n);
             else if (radioButton3.Checked == true)
-                Fun_Permute_Queue(m, n, 0);
+                Fun_Permute_Queue(m, n );
             richTextBox1.Text = m_strout;
         }
 
@@ -245,7 +291,7 @@ namespace LinearTable
         private void button3_Click(object sender, EventArgs e)
         {
             int m = Convert.ToInt32(textBox1.Text);
-            //richTextBox1.Text = Convert.ToString(m);
+            
             m_strout = "";
             for (int i = 0; i < 100; i++) m_percom_temp[i] = 0;
             count = 0;
@@ -256,8 +302,8 @@ namespace LinearTable
                 for (int i = 1; i <= m; i++)
                     Fun_Permute_Stack1(m, i);
             else if (radioButton3.Checked == true)
-                for (int i = 1; i <= m; i++)
-                    ;
+                for (int i = 1; i < m; i++)
+                    Fun_Permute_Queue(m,i);
                     richTextBox1.Text = m_strout;
         }
         

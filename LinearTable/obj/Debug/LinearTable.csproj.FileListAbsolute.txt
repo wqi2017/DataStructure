@@ -44,3 +44,4 @@ C:\Users\wangqi\Desktop\LinearTable\LinearTable\bin\Debug\LinearTable.exe
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\bin\Debug\LinearTable.pdb
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.permutationAndCombinationForm.resources
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.CalculatorForm.resources
+C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.Fractaltree.resources

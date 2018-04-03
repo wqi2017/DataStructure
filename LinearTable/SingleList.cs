@@ -435,5 +435,10 @@ namespace LinearTable
             }
             DrawSingleList();
         }
+
+        private void SingleList_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
