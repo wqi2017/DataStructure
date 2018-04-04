@@ -223,24 +223,24 @@ namespace LinearTable
                     for (int i = 0; i < m; i++)
                         k1[i] = i1 - m + i + 1;
                     int count = 0;
-                    int[,] k2 = new int[10, 10];
+                    int[,] k2 = new int[1000, 10];
                     for (int i = 0; i < m; i++)
                         k2[count, i] = i1 - m + i + 1;
                     for (int j1 = j + 1; j1 < m; j1++)
                     {
                         for (int j2 = 0; j2 <= count; j2++)
                         {
+                            int count1 = 0;
                             int[] k3 = new int[10];
                             for (int i12 = 0; i12 < m; i12++)
                                 k3[i12] = k2[j2, i12];
                                 swap(k3, j, j1);
                                 for (int i13 = 0; i13 < m; i13++)
-                                    k2[count+1, i13] = k3[i13];
+                                    k2[count1++, i13] = k3[i13];
                                     for (int i = 0; i < m; i++) m_strout += Convert.ToString(k3[i]);
                             m_strout += "\r\n";
-                            
+                            count = count1;                            
                         }
-                        count++;
                                                
                     }
                 }
