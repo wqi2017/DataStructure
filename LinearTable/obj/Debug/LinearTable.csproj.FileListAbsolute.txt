@@ -34,7 +34,6 @@ C:\Users\wangqi\Desktop\DataStructure\DataStructure\LinearTable\LinearTable\obj\
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\bin\Debug\LinearTable.exe.config
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.exe
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.pdb
-C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.csprojResolveAssemblyReference.cache
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.mainMenu.resources
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.Properties.Resources.resources
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.SequenceTable.resources
@@ -48,4 +47,4 @@ C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.Fractaltre
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.Maze1.resources
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.Maze2.resources
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.Maze3.resources
-C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.Maze4.resources
+C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.CMaze4.resources
