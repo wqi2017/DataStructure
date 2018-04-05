@@ -46,3 +46,6 @@ C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.permutatio
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.CalculatorForm.resources
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.Fractaltree.resources
 C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.Maze1.resources
+C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.Maze2.resources
+C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.Maze3.resources
+C:\Users\wangqi\Desktop\LinearTable\LinearTable\obj\Debug\LinearTable.Maze4.resources

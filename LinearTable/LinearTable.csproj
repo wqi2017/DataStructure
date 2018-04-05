@@ -63,6 +63,24 @@
     <Compile Include="Maze1.Designer.cs">
       <DependentUpon>Maze1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Maze2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maze2.Designer.cs">
+      <DependentUpon>Maze2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maze3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maze3.Designer.cs">
+      <DependentUpon>Maze3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maze4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maze4.Designer.cs">
+      <DependentUpon>Maze4.cs</DependentUpon>
+    </Compile>
     <Compile Include="permutationAndCombinationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +124,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Maze1.resx">
       <DependentUpon>Maze1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maze2.resx">
+      <DependentUpon>Maze2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maze3.resx">
+      <DependentUpon>Maze3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maze4.resx">
+      <DependentUpon>Maze4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="permutationAndCombinationForm.resx">
       <DependentUpon>permutationAndCombinationForm.cs</DependentUpon>

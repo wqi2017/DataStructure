@@ -35,8 +35,11 @@
             this.排列组合ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.计算器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.分形树ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.迷宫1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.迷宫2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.迷宫3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.迷宫4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +62,10 @@
             this.排列组合ToolStripMenuItem,
             this.计算器ToolStripMenuItem,
             this.分形树ToolStripMenuItem,
-            this.迷宫1ToolStripMenuItem});
+            this.迷宫1ToolStripMenuItem,
+            this.迷宫2ToolStripMenuItem,
+            this.迷宫3ToolStripMenuItem,
+            this.迷宫4ToolStripMenuItem});
             this.linearTableToolStripMenuItem.Name = "linearTableToolStripMenuItem";
             this.linearTableToolStripMenuItem.Size = new System.Drawing.Size(56, 21);
             this.linearTableToolStripMenuItem.Text = "线性表";
@@ -99,6 +105,34 @@
             this.分形树ToolStripMenuItem.Text = "分形树";
             this.分形树ToolStripMenuItem.Click += new System.EventHandler(this.分形树ToolStripMenuItem_Click);
             // 
+            // 迷宫1ToolStripMenuItem
+            // 
+            this.迷宫1ToolStripMenuItem.Name = "迷宫1ToolStripMenuItem";
+            this.迷宫1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.迷宫1ToolStripMenuItem.Text = "迷宫1";
+            this.迷宫1ToolStripMenuItem.Click += new System.EventHandler(this.迷宫1ToolStripMenuItem_Click);
+            // 
+            // 迷宫2ToolStripMenuItem
+            // 
+            this.迷宫2ToolStripMenuItem.Name = "迷宫2ToolStripMenuItem";
+            this.迷宫2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.迷宫2ToolStripMenuItem.Text = "迷宫2";
+            this.迷宫2ToolStripMenuItem.Click += new System.EventHandler(this.迷宫2ToolStripMenuItem_Click);
+            // 
+            // 迷宫3ToolStripMenuItem
+            // 
+            this.迷宫3ToolStripMenuItem.Name = "迷宫3ToolStripMenuItem";
+            this.迷宫3ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.迷宫3ToolStripMenuItem.Text = "迷宫3";
+            this.迷宫3ToolStripMenuItem.Click += new System.EventHandler(this.迷宫3ToolStripMenuItem_Click);
+            // 
+            // 迷宫4ToolStripMenuItem
+            // 
+            this.迷宫4ToolStripMenuItem.Name = "迷宫4ToolStripMenuItem";
+            this.迷宫4ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.迷宫4ToolStripMenuItem.Text = "迷宫4";
+            this.迷宫4ToolStripMenuItem.Click += new System.EventHandler(this.迷宫4ToolStripMenuItem_Click);
+            // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -106,13 +140,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1064, 603);
             this.panel1.TabIndex = 1;
-            // 
-            // 迷宫1ToolStripMenuItem
-            // 
-            this.迷宫1ToolStripMenuItem.Name = "迷宫1ToolStripMenuItem";
-            this.迷宫1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.迷宫1ToolStripMenuItem.Text = "迷宫1";
-            this.迷宫1ToolStripMenuItem.Click += new System.EventHandler(this.迷宫1ToolStripMenuItem_Click);
             // 
             // mainMenu
             // 
@@ -142,6 +169,9 @@
         private System.Windows.Forms.ToolStripMenuItem 计算器ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 分形树ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 迷宫1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 迷宫2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 迷宫3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 迷宫4ToolStripMenuItem;
     }
 }
 

@@ -150,5 +150,28 @@ namespace LinearTable
             textBox3.Text= m_cmaze.ShortPath();
             DrawMaze(m_cmaze, true);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // OpenFileDialog dlg = new OpenFileDialog();
+            SaveFileDialog dlg = new SaveFileDialog();
+            string str = "..\\..\\data\\";
+            dlg.InitialDirectory = str;
+            dlg.Filter = "数据文件（maze*.dat）|maze*.dat|文本文件                                                                          （maze*.txt）|maze*.txt";
+            dlg.Title = "打开迷宫数据文件";
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                textBox2.Text = dlg.FileName;
+                StreamWriter sr = new StreamWriter(dlg.FileName);
+                //StreamReader sr = new StreamReader(textBox2.Text);
+                //textBox1.Text = sr.ReadToEnd();
+                sr.Write(textBox1.Text);
+
+                sr.Close();
+                button3.Enabled = true;
+            }
+            else
+                button3.Enabled = false;
+        }
     }
 }

@@ -69,6 +69,24 @@ namespace LinearTable
             Control_Add(m_maze1);
         }
 
+        private void 迷宫2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Maze2 m_maze2 = new Maze2();
+            Control_Add(m_maze2);
+        }
+
+        private void 迷宫3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Maze3 m_maze3 = new Maze3();
+            Control_Add(m_maze3);
+        }
+
+        private void 迷宫4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Maze4 m_maze4 = new Maze4();
+            Control_Add(m_maze4);
+        }
+
       
     }
 }
