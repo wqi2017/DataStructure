@@ -63,6 +63,12 @@ namespace LinearTable
             Control_Add(m_fractaltree);
         }
 
+        private void 迷宫1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Maze1 m_maze1 = new Maze1();
+            Control_Add(m_maze1);
+        }
+
       
     }
 }
